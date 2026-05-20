@@ -22,7 +22,6 @@ public class BookingService
     {
         return _bookingRepository.GetBookingsForUserAsync(userId);
     }
-
     public Task<List<Booking>> GetBookingsForAdminAsync()
     {
         return _bookingRepository.GetBookingsForAdminAsync();
