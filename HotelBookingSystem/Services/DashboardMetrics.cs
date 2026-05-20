@@ -28,7 +28,6 @@ public class DashboardMetrics
 public class HotelPerformance
 {
     public string HotelName { get; set; } = string.Empty;
-
     public string City { get; set; } = string.Empty;
 
     public int Bookings { get; set; }
