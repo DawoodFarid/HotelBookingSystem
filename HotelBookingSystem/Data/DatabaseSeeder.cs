@@ -131,6 +131,7 @@ public static class DatabaseSeeder
         ["HZ-FC"] = "https://images.unsplash.com/photo-1529290130-4ca3753253ae?auto=format&fit=crop&w=1100&q=80"
     };
 
+
     private static async Task ApplyRoomImageUpdatesAsync(HotelBookingDbContext db)
     {
         var rooms = await db.Rooms.ToListAsync();
