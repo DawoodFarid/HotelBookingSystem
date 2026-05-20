@@ -19,7 +19,6 @@ public class RoomSearchFilter : IValidatableObject
     public RoomType? Type { get; set; }
 
     public decimal? MaxPrice { get; set; }
-
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
     {
         if (CheckIn.Date < DateTime.Today)
