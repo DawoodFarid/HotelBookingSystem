@@ -6,7 +6,6 @@ public class BookingRequest : IValidatableObject
 {
     [Required]
     public int RoomId { get; set; }
-
     [Range(1, 1, ErrorMessage = "Only one room unit can be booked at a time.")]
     public int RoomUnits { get; set; } = 1;
 
