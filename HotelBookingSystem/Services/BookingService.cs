@@ -166,7 +166,6 @@ public class BookingService
                 .ToList()
         };
     }
-
     private static bool IsOwner(User user, Booking booking)
     {
         return booking.UserId == user.Id;
