@@ -79,6 +79,7 @@ public static class DatabaseSeeder
                 ImageUrl = "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1000&q=80"
             }
         };
+        
 
         db.Hotels.AddRange(hotels);
         await db.SaveChangesAsync();
