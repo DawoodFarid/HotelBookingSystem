@@ -23,7 +23,6 @@ public class Room : BaseEntity
 
     [Required, StringLength(60)]
     public string BedType { get; set; } = string.Empty;
-
     [Range(1000, 500000)]
     public decimal PricePerNight { get; set; }
 
