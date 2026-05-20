@@ -134,7 +134,6 @@ public class BookingService
         var paidBookings = activeBookings
             .Where(booking => booking.PaymentStatus == PaymentStatus.Paid)
             .ToList();
-
         var availableRoomNights = Math.Max(1, rooms.Sum(room => room.TotalUnits) * 30);
         var bookedRoomNights = activeBookings.Sum(booking => booking.Nights);
 
