@@ -47,7 +47,6 @@ public class Booking : BaseEntity
 
     [NotMapped]
     public int Nights => Math.Max(1, (CheckOut.Date - CheckIn.Date).Days);
-
     public override string GetDisplayName()
     {
         return $"{BookingCode} - {GuestName}";
