@@ -10,3 +10,4 @@ public interface IBookingRepository : IRepository<Booking>
 
     Task<Booking?> GetBookingDetailsAsync(int id);
 }
+
