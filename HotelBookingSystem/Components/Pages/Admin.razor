@@ -111,7 +111,6 @@ else
         bookings = await BookingService.GetBookingsForAdminAsync();
         metrics = await BookingService.GetDashboardMetricsAsync();
     }
-
     private void GoToLogin()
     {
         Navigation.NavigateTo("/admin-login");
