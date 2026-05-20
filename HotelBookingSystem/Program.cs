@@ -12,7 +12,6 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddDbContext<HotelBookingDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddAuthorizationCore();
 
