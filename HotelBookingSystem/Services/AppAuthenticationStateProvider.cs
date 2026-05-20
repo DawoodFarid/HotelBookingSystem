@@ -20,7 +20,6 @@ public class AppAuthenticationStateProvider : AuthenticationStateProvider, IDisp
     {
         _authService.AuthStateChanged -= NotifyChanged;
     }
-
     private void NotifyChanged()
     {
         NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
