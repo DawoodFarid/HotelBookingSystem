@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace HotelBookingSystem.Services;
-
 public class LoginInput
 {
     [Required, EmailAddress]
