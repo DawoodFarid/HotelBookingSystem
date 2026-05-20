@@ -32,7 +32,6 @@ public class Hotel : BaseEntity
     public ICollection<Room> Rooms { get; set; } = new List<Room>();
 
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
-
     [NotMapped]
     public string[] AmenityList => Amenities
         .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
