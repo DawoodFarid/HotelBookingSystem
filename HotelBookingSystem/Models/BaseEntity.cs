@@ -13,3 +13,4 @@ public abstract class BaseEntity
         return $"{GetType().Name} #{Id}";
     }
 }
+
