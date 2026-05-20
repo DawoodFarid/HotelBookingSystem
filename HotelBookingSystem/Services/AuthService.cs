@@ -15,7 +15,6 @@ public class AuthService
     {
         _dbContext = dbContext;
     }
-
     public event Action? AuthStateChanged;
 
     public User? CurrentUser { get; private set; }
