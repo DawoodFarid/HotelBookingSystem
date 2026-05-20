@@ -49,7 +49,6 @@ public class BookingService
         {
             return (new ServiceResult(false, "Guest count is higher than this room capacity."), null);
         }
-
         var availableUnits = await _roomRepository.GetAvailableUnitsAsync(room.Id, request.CheckIn, request.CheckOut);
         if (availableUnits <= 0)
         {
